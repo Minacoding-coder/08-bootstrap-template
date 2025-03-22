@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1">
+        <title> Bootstrap Template</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <style>
+
+            *:has(>video.fullscreen){
+                position: relative;
+            }
+
+            video.fullscreen{
+                height: 100%;
+                width: auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                z-index: -1;
+            }
+
+            @media{
+                video.fullscreen{
+                    height:auto;
+                    width: 100%;
+                }
+            }
+
+            #slide1-background-holder{
+                background-image: url(images/IMG_4695.JPG);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            #slide2-background-holder{
+                background-image:url("images/IMG_4997.JPG");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            #slide3-background-holder{
+                background-image:url("images/IMG_5146.JPG");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: right;
+                }
+                
+                
+
+        </style>
+    </head>
+    <body>
+
+        <header class="position-relative vh-100 d-flex flex-column justify-content-center overflow-hidden" >
+            <div class="text-white text-center">
+                <h1 class="display-1">Flowers</h1>
+                <p class="lead">Flower photos in my album</p>
+
+            </div>
+            <div class="h-100 position-absolute w-100 top-0 start-o video-holder z-n1" >
+                <video class="fullscreen"  src="images/IMG_4253.MOV"muted preload loop autoplay></video>
+            </div>
+
+
+
+        </header>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8 col-lg-6 col-xxl-5">
+                    <h4 class="text center mt-5">I really enjoy taking pictures of flowers everywhere I go</h4>
+                    <p class="text-center">By Minahil Arif</p>
+                    <P class="text-center"><time datetime="2025-03-20">March 20,2025</time></P>
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis aliquid, ipsa minima, similique dolor non cupiditate pariatur aliquam explicabo dignissimos itaque quo? Aperiam exercitationem alias, sapiente earum labore deserunt ut?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora praesentium vitae aut deleniti delectus ad, quod fuga expedita cum eius voluptates tenetur neque iure inventore exercitationem a? Ducimus, corporis velit?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At distinctio modi ab sint neque labore dolorem deleniti obcaecati quae adipisci ex, impedit nobis, nam quidem sit odit nostrum illum soluta.</p>
+
+
+
+
+
+                </div>
+
+
+
+            </div><!---close row-->
+            <div class="row justify-content-center">
+                <figure class="col-12 col-sm-10">
+
+                      <div class="ratio ratio-4x3">
+                        <img class="img-fluid" src="images/4988080.jpg">
+                      </div>
+                      <figcaption class="figure-caption text-center">Random Flowers graphic</figcaption>
+
+                </figure>
+
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8 col-lg-6 col-xxl-5">
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis aliquid, ipsa minima, similique dolor non cupiditate pariatur aliquam explicabo dignissimos itaque quo? Aperiam exercitationem alias, sapiente earum labore deserunt ut?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora praesentium vitae aut deleniti delectus ad, quod fuga expedita cum eius voluptates tenetur neque iure inventore exercitationem a? Ducimus, corporis velit?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At distinctio modi ab sint neque labore dolorem deleniti obcaecati quae adipisci ex, impedit nobis, nam quidem sit odit nostrum illum soluta.</p>
+                </div>
+
+
+
+            </div><!---close row-->
+                
+
+        </div><!--container closes-->
+
+        <div class="container-fluid">
+
+            <!-- Slide 1 -->
+             <div class="row justify-content-center"> 
+
+                 <div id="slide1-background-holder" class="vh-100 z-n1 sticky-top"></div>
+                 <div class="col-12 col-sm-6 bg-light">
+                    <p class="m-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo molestias beatae odit ipsa facere quis. Vel, quaerat numquam culpa, nam fugiat, velit consequatur dolor voluptate distinctio ratione cumque natus eaque.</p>
+                 </div>
+                 <div class="vh-100"></div>
+            </div>
+
+            <!-- slide 2 -->
+             <div class="row justify-content-center">
+                <div id="slide2-background-holder" class="vh-100 z-n1 sticky-top"></div>
+                <div class="col-12 col-sm-5 bg-light">
+                    <p class="m-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem expedita accusamus aspernatur amet, consequatur beatae non dicta provident illo totam nesciunt perferendis reprehenderit in soluta ea ab ipsa, magni explicabo!</p>
+                </div>
+            </div>
+
+              <!-- slide 3 -->
+                <div class="row">
+                <div id="slide3-background-holder" class="vh-100 sticky-top z-n1"></div>
+                <div class="col-6 offset-5 bg-light">
+                <p class="m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt consectetur facere corrupti? Facere voluptatum nulla sit sunt cum eligendi impedit blanditiis temporibus consectetur voluptate, enim dicta. Neque accusantium numquam eius!</p>
+                </div>
+                <div class="vh-100"></div>
+            </div>
+
+            </div><!-- close .container -->
+
+            
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-8 col-lg-8 col-xxl-6">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt consectetur facere corrupti? Facere voluptatum nulla sit sunt cum eligendi impedit blanditiis temporibus consectetur voluptate, enim dicta. Neque accusantium numquam eius!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt consectetur facere corrupti? Facere voluptatum nulla sit sunt cum eligendi impedit blanditiis temporibus consectetur voluptate, enim dicta. Neque accusantium numquam eius!</p>
+      </div>
+    </div>
+  </div><!-- close .container -->
+
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <figure class="col-12 col-md-10 col-lg-8 col-xxl-6">
+          <div class="ratio ratio-1x1">
+            <img class="img-fluid" src="images/4988080.jpg">
+          </div>
+        <figcaption class="figure-caption text-center">A random flowers graphic</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-8 col-lg-8 col-xxl-6">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit mollitia beatae sint debitis? Suscipit vero quas amet aliquid repellat blanditiis reprehenderit maxime. Fuga eligendi illum non laborum, doloremque exercitationem quos!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt consectetur facere corrupti? Facere voluptatum nulla sit sunt cum eligendi impedit blanditiis temporibus consectetur voluptate, enim dicta. Neque accusantium numquam eius!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt consectetur facere corrupti? Facere voluptatum nulla sit sunt cum eligendi impedit blanditiis temporibus consectetur voluptate, enim dicta. Neque accusantium numquam eius!</p>
+      </div>
+    </div>
+  </div><!-- close .container -->
+ 
+
+    <!-- bottom footer -->
+    <footer class="container-fluid bg-dark">
+        <div class="row justify-content-center">
+          <div class="col-12 py-5">
+            <p class="text-center text-white py-5">By Minahil Arif</p>
+          </div>
+        </div>
+      </footer>
+
+        </div>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
